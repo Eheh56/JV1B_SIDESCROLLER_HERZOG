@@ -9,11 +9,6 @@ public class Collector : MonoBehaviour
         if (collectible != null)
         {
             collectible.Collect();
-            //ici je collecte
         }
-    }
-    public interface ICollectible
-    {
-        public void Collect();
     }
 }

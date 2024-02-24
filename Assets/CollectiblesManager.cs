@@ -33,8 +33,4 @@ public class CollectiblesManager : MonoBehaviour
     //    numDiamondsCollected++;
     //    diamondUI.text = numDiamondsCollected.ToString();
     //}
-    public interface ICollectible
-    {
-        public void Collect();
-    }
 }

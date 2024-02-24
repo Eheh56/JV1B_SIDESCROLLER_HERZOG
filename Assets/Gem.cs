@@ -1,12 +1,6 @@
 using System;
 using UnityEngine;
 
-public interface ICollectible
-{
-    public void Collect();
-}
-
-
 public class Gem : MonoBehaviour, ICollectible
 {
     public static event Action OnGemCollected;
@@ -16,7 +10,6 @@ public class Gem : MonoBehaviour, ICollectible
 
     public void Collect()
     {
-        OnGemCollected?.Invoke();
 
         // This is where you can play sounds or spawn particles
         //Instantiate(collectParticle, transform.position, Quaternion.identity);
@@ -24,5 +17,4 @@ public class Gem : MonoBehaviour, ICollectible
         Debug.Log("Gem collected!");
         Destroy(gameObject);
     }
-
 }
