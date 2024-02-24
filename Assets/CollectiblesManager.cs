@@ -4,7 +4,7 @@ using TMPro;
 public class CollectiblesManager : MonoBehaviour
 {
     public TextMeshProUGUI gemUI;
-    int numGemsCollected = 0;
+    public int numGemsCollected = 0;
 
     // Example of another collectible type
     //public TextMeshProUGUI diamondUI;

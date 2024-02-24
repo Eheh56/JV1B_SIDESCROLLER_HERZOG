@@ -8,12 +8,19 @@ public class playerteleport : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (CollectiblesManager.numGemsCollected = 3)
         {
-            if (currentteleporteur != null)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                transform.position = currentteleporteur.GetComponent<teleporteur>().GetDestination().position;
+                if (currentteleporteur != null)
+                {
+                    transform.position = currentteleporteur.GetComponent<teleporteur>().GetDestination().position;
+                }
             }
+        }
+        else
+        {
+            return;
         }
     }
 
