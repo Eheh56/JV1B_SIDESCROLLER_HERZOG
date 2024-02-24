@@ -27,8 +27,8 @@ public class CollectiblesManager : MonoBehaviour
         numGemsCollected++;
         gemUI.text = numGemsCollected.ToString();
     }
-
-    //private void DiamondCollected()
+    
+    //private void DiamondCollected()d
     //{
     //    numDiamondsCollected++;
     //    diamondUI.text = numDiamondsCollected.ToString();
