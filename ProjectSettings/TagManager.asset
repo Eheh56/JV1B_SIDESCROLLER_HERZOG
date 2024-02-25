@@ -6,6 +6,7 @@ TagManager:
   tags:
   - teleporteur
   - missile
+  - teleporteur1
   layers:
   - Default
   - TransparentFX
