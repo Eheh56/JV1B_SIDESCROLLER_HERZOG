@@ -5,7 +5,7 @@ using UnityEngine;
 public class mouvement : MonoBehaviour
 {
     [SerializeField]
-    private KeyCode leftKey = KeyCode.LeftArrow, rightKey = KeyCode.RightArrow, upKey = KeyCode.UpArrow;
+    private KeyCode leftKey = KeyCode.LeftArrow, rightKey = KeyCode.RightArrow, upKey = KeyCode.UpArrow, downKey = KeyCode.DownArrow;
 
     [SerializeField]
     private Rigidbody2D rgbd;
@@ -30,6 +30,10 @@ public class mouvement : MonoBehaviour
         if (Input.GetKey(upKey))
         {
             rgbd.AddForce(Vector2.up);
+        }
+        if (Input.GetKey(downKey))
+        {
+            rgbd.AddForce(Vector2.down);
         }
     }
 }

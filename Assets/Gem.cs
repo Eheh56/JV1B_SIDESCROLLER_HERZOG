@@ -10,7 +10,6 @@ public class Gem : MonoBehaviour, ICollectible
  
     public void Collect()
     {
-        OnGemCollected?.Invoke();
  
         // This is where you can play sounds or spawn particles
         //Instantiate(collectParticle, transform.position, Quaternion.identity);

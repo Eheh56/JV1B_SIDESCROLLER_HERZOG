@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class playerteleport : MonoBehaviour
 {
-    private GameObject currentteleporteur;
+    public GameObject currentteleporteur;
 
     void Update()
     {
-        if (CollectiblesManager.numGemsCollected = 3)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (currentteleporteur != null)
             {
-                if (currentteleporteur != null)
-                {
-                    transform.position = currentteleporteur.GetComponent<teleporteur>().GetDestination().position;
-                }
+                transform.position = currentteleporteur.GetComponent<teleporteur>().GetDestination().position;
             }
         }
-        else
-        {
-            return;
-        }
     }
+
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

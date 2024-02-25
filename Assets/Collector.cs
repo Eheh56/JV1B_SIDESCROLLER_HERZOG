@@ -11,7 +11,4 @@ public class Collector : MonoBehaviour
             collectible.Collect();
         }
     }
-}fgvghfcu
-    1
-    tcyxriyt
-    1
+}
